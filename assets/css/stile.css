@@ -1,0 +1,372 @@
+/* IMPOSTAZIONI GENERALI */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    
+}
+
+
+
+    
+    
+
+
+
+
+
+/* HEADER */
+
+
+h1 {
+    font-size: 4rem;
+    color:#ffffff;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+header {
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 10px #3d3d3d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+
+
+nav .pulsante {
+    margin-left: 0;
+      
+}
+
+#menuMobile {
+    color: #e42424;
+}
+
+input#menuButton {
+    display: none;
+}
+
+input#menuButton:checked ~ nav {
+     height: 200px;
+}
+
+
+    
+
+/* MAIN */
+
+#icona {
+    color: #e42424;
+    font-size: xx-large;
+    margin-left: 1.5rem;
+    
+    
+}
+
+.banner {
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.pulsante, .pulsanteNewsletter , .pulsanteContatti{
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    background: #6cc1e3;
+    background: linear-gradient(90deg, #6cc1e2 33%, #392f7a 96%);
+    border: 0;
+    color: white;
+      
+}
+
+#email {
+    width: 150px;
+    height: 60;
+}
+
+.pulsante {
+    margin: auto;
+}
+
+.pulsanteNewsletter {
+    margin-left: 1.5rem;
+    width: 250px;
+    
+
+}
+
+
+.figure1 {
+    background-image: url(../images/foto1.jpg);
+    
+}
+
+.figure2 {
+    background-image: url(../images/foto2.jpg);
+}
+
+.figure1 , .figure2 {
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 10rem;
+    margin: 2rem;
+
+}
+
+p {
+    padding: 0.5rem;
+}
+
+.banner .pulsante {
+    margin-left: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0, 1);
+    animation: pulse 3s infinite;
+}
+
+aside {
+    text-align: center;
+}
+
+
+
+
+.newsletter {
+    flex-direction: column;
+    
+}
+
+#grey {
+    background-color: #d2dce7;
+}
+
+#white {
+    background-color: #ffffff;
+    
+}
+
+
+.section {
+    text-align: center;
+    margin-top: 3rem;
+    
+    
+}
+
+
+
+.section2 {
+    background-color: #0c0633;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5rem;
+    padding: 2rem 0 2rem 0;
+}
+
+table {
+    text-align: left;
+    margin: 1rem 1rem 1rem 1rem;
+
+    
+}
+
+th {
+    font-weight: bold;
+}
+
+.form-control1 {
+    width: 340px;
+    padding: ;
+    margin: 1rem 0 0 0;
+}
+
+.form-control2 {
+    width: 340px;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 1rem 0 1rem 0;
+    
+}
+
+.form-control3 {
+    width: 340px;
+    padding: 0 0 3rem 0rem;
+}
+
+.formNewsletter {
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 1.5rem;
+    width: 246px;
+    
+}
+
+
+
+.pulsanteContatti {
+    width: 250px;
+    margin: auto;
+    padding-top: 0.5rem;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #eeeeee;
+    display: flex;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+footer h4 {
+    padding: 3rem 1rem 1rem 1.5rem;
+}
+
+
+footer .pulsante {
+    width: 200px;
+    margin: 1rem;
+    
+}
+
+span {
+    font-size: small ;
+}
+
+/* RESPONSIVE */
+ 
+@media screen and (max-width: 500px) {
+    h1, h2, h3, h4 {
+        line-height: 1;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 750px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.4s ease-out;
+    }
+
+    h1, h2, h3, h4 {
+        line-height: 1.1;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    
+        
+    }
+
+    footer {
+        flex-direction: row;
+    } 
+
+    aside {
+        flex-direction: row;
+        
+    }
+
+    .newsletter {
+        margin-right: 
+    }
+        
+    span {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    
+}
+
+@media screen and (min-width: 750px) {
+    
+    #menuMobile {
+        display: none;
+    }
+    
+    header nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    header nav ul {
+        margin-right: 2em;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    
+}
+
+.banner .pulsante:hover {
+    z-index: 3;
+    cursor: pointer;
+    margin-left: 0;
+    
+}
+
+@keyframes pulse {
+
+    0% {
+
+        box-shadow: 0 0 0 0 #000000b3;
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px #00000000;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #00000000;
+    }
+}
